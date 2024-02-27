@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <!-- Load CSS files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="theme.css">
+
+    <!-- Load BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Load JS files -->
+    <script src="script.js" type="module" defer></script>
+
+</head>
+<body class="">
+
+    <div id="header"></div>
+
+    <div id="app" class="app container">
+        <div class="app-header">
+            <div id="page-number" class="page-number">1 of 20</div>
+            <div id="header-title" id="header-title">Quiz Title</div>
+        </div>
+
+        <!-- Question container -->
+        <div id="question-container">
+            <div id="question" class="question"></div>
+            <div id="answers-container">
+            </div>
+            <button id="next-button">Next</button>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="copyright">Created by Ryan Macalandag. Copyright ©<span id="year"></span> All rights reserved. </p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

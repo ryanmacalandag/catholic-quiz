@@ -1,0 +1,110 @@
+/* Project Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Lato, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lato, 'Lucida sans', serif;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Colors  */
+
+:root {
+    color: var(--clr-neutral-black);
+    background-color: var(--clr-primary-light);
+    --theme-hue: 220; /* 0 to 360 */
+    --theme-hue-secondary: calc(360 + 120 - var(--theme-hue));
+
+    --clr-primary: hsl(var(--theme-hue), 55%, 20%);
+    --clr-primary-accent: hsl(var(--theme-hue), 70%, 40%);
+    --clr-primary-light: hsl(var(--theme-hue), 30%, 90%);
+    --clr-primary-white: hsl(var(--theme-hue), 30%, 98%);
+    --clr-primary-dark: hsl(var(--theme-hue), 45%, 10%);
+    
+    --clr-secondary: hsl(var(--theme-hue-secondary), 85%, 50%);
+    --clr-secondary-light: hsl(var(--theme-hue-secondary), 85%, 92%);
+    --clr-secondary-dark: hsl(var(--theme-hue-secondary), 85%, 10%);
+
+    --clr-neutral: hsl(0, 0%, 45%);
+    --clr-neutral-light: hsl(0, 0%, 65%);
+    --clr-neutral-lighter: hsl(0, 0%, 95%);
+    --clr-neutral-lightest: hsl(0, 0%, 100%);
+    --clr-neutral-dark: hsl(0, 0%, 30%);
+    --clr-neutral-black: hsl(0, 0%, 10%);
+    --clr-neutral-white: hsl(0, 100%, 100%);
+
+    --clr-transparent: transparent;
+    --clr-shadow: 1px 20px 25px -10px rgba(0,0,0,0.10);
+    --border-radius: 5px;
+    --border-radius-min: 5px;
+
+    --clr-info: hsl(220, 90%, 40%);
+    --clr-success: hsl(140, 90%, 40%);
+    --clr-success-dark: hsl(140, 90%, 20%);
+    --clr-success-light: hsl(140, 90%, 95%);
+    --clr-warning: hsl(35, 90%, 50%);
+    --clr-danger: hsl(0, 90%, 40%);
+    --clr-danger-light: hsl(0, 90%, 95%);
+    --clr-danger-dark: hsl(0, 90%, 20%);
+}
+
+.dark-mode {
+    color: var(--clr-neutral-lightest);
+    background-color: var(--clr-secondary-dark);
+
+    --clr-primary: hsl(var(--theme-hue), 85%, 30%);
+    --clr-primary-accent: hsl(var(--theme-hue), 85%, 50%);
+    --clr-primary-light: hsl(var(--theme-hue), 85%, 95%);
+    --clr-primary-white: hsl(var(--theme-hue), 85%, 95%);
+    --clr-primary-dark: hsl(var(--theme-hue), 45%, 10%);
+
+    --clr-secondary: hsl(var(--theme-hue-secondary), 85%, 50%);
+    --clr-secondary-light: hsl(var(--theme-hue-secondary), 85%, 90%);
+    --clr-secondary-dark: hsl(var(--theme-hue-secondary), 15%, 20%);
+
+    --clr-transparent: transparent;
+    --clr-shadow: 1px 10px 25px -10px rgba(0, 0, 0, 0.2);
+
+    --clr-neutral: hsl(0, 0%, 45%);
+    --clr-neutral-light: hsl(0, 0%, 65%);
+    --clr-neutral-lighter: hsl(0, 0%, 75%);
+    --clr-neutral-lightest: hsl(0, 0%, 97%);
+    --clr-neutral-dark: hsl(0, 0%, 30%);
+    --clr-neutral-black: hsl(0, 0%, 10%);
+    --clr-neutral-white: hsl(0, 100%, 100%);
+}
+
+.dark-mode h1 {
+    color: var(--clr-primary-light);
+}
+
+h1 {
+    color: var(--clr-primary);
+}
+
+a {
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--clr-secondary);
+}
+
+a.reverse {
+    color: var(--clr-primary-light);
+    text-decoration: none;
+}
+
